@@ -14,8 +14,8 @@ is_tolerant_on_white_spaces = True
 
 -- Specify the path of the executable built from your project.  
 executable :: OperatingSystem -> FilePath
-executable MacOSX = "../tictac.exe"
-executable Linux  = "../mytictac.exe"
+executable MacOSX = "../messenger.exe"
+executable Linux  = "../my.exe"
 
 -- Specify where you want to log the outputs from both the oracle and your executable.
 -- In the case 'is_expected' is set to True, 
@@ -27,14 +27,8 @@ log_dir = "../log"
 -- Specify the list of (relative or absolute) paths of the acceptance test files.
 
 acceptance_tests = 
-    [ "../at1.txt"
-    , "../at2.txt"
-    , "../at3.txt"
-    , "../at4.txt"
-    , "../at5.txt"
-    , "../at6.txt"
-    , "../at7.txt"
-    , "../at8.txt"
-    , "../at9.txt"
-    , "../at10.txt"
+    [ "../messenger-project/tests/acceptance/instructor/at1.txt",
+      "../messenger-project/tests/acceptance/student/at2.txt",
+      "../messenger-project/tests/acceptance/student/at3.txt",
+      "../messenger-project/tests/acceptance/student/at4.txt"
     ]
